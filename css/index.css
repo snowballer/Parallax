@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.home-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.home-scene-layers,.home-scene-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-scene-bg{
+    background: url("http://ouyt4c4z5.bkt.clouddn.com/sky.jpg") no-repeat center center / cover;
+    transform: translate3d(0,0,0.01px);
+}
+.home-scene-mid-ground{
+    background: url("http://ouyt4c4z5.bkt.clouddn.com/mid-ground-opt.png") no-repeat center center / cover;
+    transform: translate3d(0,0,0.01px);
+}
+.home-scene-mid-mountains{
+    background: url("http://ouyt4c4z5.bkt.clouddn.com/mid-mountains.png") no-repeat center center / cover;
+    transform: translate3d(0,0,0.01px);
+}
+.home-scene-mountains{
+    background: url("http://ouyt4c4z5.bkt.clouddn.com/mountains.png") no-repeat center center / cover;
+    transform: translate3d(0,0,0.01px) ;
+}
+.fog{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2000px;
+    height: 617px;
+    transform: translate3d(0,0,0.01px);
+    animation: bg 100s linear  infinite;
+    background: url("http://ouyt4c4z5.bkt.clouddn.com/fog.png");
+}
+@keyframes zoomIn1 {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(1.05);
+    }
+}
+@keyframes zoomIn2 {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(1.18);
+    }
+}
+@keyframes zoomIn3 {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(1.5);
+    }
+}
+@keyframes zoomIn4 {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(1.9);
+    }
+}
+@keyframes bg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10000px 0;
+    }
+}
+
+.container {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 4%;
+    bottom: 0;
+    height: 50px;
+    width: 250px;
+    margin: auto;
+}
+a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    outline: none;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #44425a 0%, #616991 100%);
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 14px;
+    font-family: roboto, helvetica;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 50px;
+}
