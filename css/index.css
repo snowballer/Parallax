@@ -41,7 +41,7 @@ body{
     width: 2000px;
     height: 617px;
     transform: translate3d(0,0,0.01px);
-    animation: bg 100s linear  infinite;
+    animation: bg 100s linear infinite;
     background: url("http://ouyt4c4z5.bkt.clouddn.com/fog.png");
 }
 @keyframes zoomIn1 {
